@@ -77,9 +77,9 @@ jobs:
         run: mkdir -p run/mods && cp build/libs/<your-mod>.jar run/mods
       # Call this Action to run the client
       - name: Run the MC client
-        uses: headlesshq/mc-runtime-test@3.0.0
+        uses: headlesshq/mc-runtime-test@4.0.0
         with:
-          mc: 1.21.4
+          mc: 4.0.0
           modloader: fabric
           regex: .*fabric.*
           mc-runtime-test: fabric
